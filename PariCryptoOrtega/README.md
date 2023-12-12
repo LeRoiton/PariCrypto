@@ -1,66 +1,27 @@
-## Foundry
+Prediction Market Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Par Florian ORTEGA
 
-Foundry consists of:
+Ce contrat intelligent (smart contract) en Solidity, appelé PrediContrat, implémente un système de prédiction de marché basé sur les paris sur la hausse ou la baisse des prix d'une cryptomonnaie. Les utilisateurs peuvent placer des paris, fermer les prédictions, et réclamer leurs gains en fonction du résultat du marché.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Fonctionnalités
+Placer un Pari : Les utilisateurs peuvent placer des paris sur la hausse ou la baisse des prix d'une cryptomonnaie dans une fenêtre de prédiction déterminée.
 
-## Documentation
+Fermer les Prédictions : Le propriétaire du contrat peut fermer les prédictions, indiquant ainsi la fin de la fenêtre de prédiction.
 
-https://book.getfoundry.sh/
+Réclamer les Gains : Les utilisateurs peuvent réclamer leurs gains après la fermeture des prédictions si leur pari est correct.
 
-## Usage
+Configuration Requise :
 
-### Build
+Node.js (version 12 ou supérieure)
+NPM (Node Package Manager)
+Forge CLI
 
-```shell
-$ forge build
-```
+Installation :
 
-### Test
+Clonez ce dépôt : https://github.com/LeRoiton/PariCrypto.git
+Installez les dépendances : npm install
 
-```shell
-$ forge test
-```
+Configuration :
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Ouvrez le fichier src/App.js et remplacez les valeurs des variables contractAddress et userAddress par les adresses réelles de votre contrat et de votre compte utilisateur.
